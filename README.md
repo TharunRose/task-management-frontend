@@ -23,6 +23,10 @@
 - React Router DOM
 - CSS Modules
 
+  Setup 
+  npm install
+  npm run dev
+
 Test Credentials
 
 - Use Admin Login
@@ -33,6 +37,6 @@ Test Credentials
 - Email: employee@gmail.com
   Password: Employee@123
 
-  
+
 
 
