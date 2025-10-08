@@ -11,7 +11,7 @@ const AddEmployee = () => {
   const [loading, setLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
 
-  const { fetchUsers } = useAppContext();
+  const { fetchUsers } = useAppContext(); 
 
   const validateForm = () => {
     let valid = true;
