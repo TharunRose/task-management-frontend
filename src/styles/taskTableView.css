@@ -1,0 +1,141 @@
+.task-table-container {
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 1px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+
+.filter-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 5px;
+}
+
+.filter-bar input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+  width: 200px;
+}
+
+.filter-bar input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 3px rgba(0, 123, 255, 0.4);
+}
+
+
+.task-table-scroll {
+  max-height: 250px;
+  overflow-y: auto;
+  overflow-x: auto;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  min-width: 700px; 
+}
+
+.task-table th,
+.task-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.task-table th {
+  background: #f8f8f8;
+  font-weight: 600;
+  color: #333;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.task-table tr:hover {
+  background-color: #fafafa;
+  transition: 0.2s;
+}
+
+
+.priority.low {
+  color: #28a745;
+  font-weight: 600;
+}
+.priority.medium {
+  color: #ffc107;
+  font-weight: 600;
+}
+.priority.high {
+  color: #fd7e14;
+  font-weight: 600;
+}
+.priority.urgent {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+
+.edit-btn {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.edit-btn:hover {
+  background: #0056b3;
+}
+
+
+.delete-btn{
+  background: #da1414;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+   margin-left: 5px;
+}
+
+.delete-btn:hover {
+  background: #db4552;
+}
+.no-data {
+  text-align: center;
+  color: #888;
+  padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .filter-bar {
+    justify-content: center;
+  }
+
+  .filter-bar input {
+    width: 100%;
+  }
+
+  .task-table th,
+  .task-table td {
+    font-size: 13px;
+    padding: 8px;
+  }
+}
